@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawberry Yield Predictor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+
+</head>
+<body class="bg-gray-900 text-white flex justify-center items-center h-screen">
+    <div class="w-96 p-6 bg-gray-800 rounded-xl shadow-lg">
+        <h1 class="text-xl font-semibold text-center">Strawberry Yield Predictor</h1>
+        <p class="text-center text-blue-400">La Trinidad, Benguet</p>
+
+        <div class="mt-4 p-4 bg-purple-700 rounded-lg">
+            <h2 class="text-lg">Current Weather</h2>
+            <div class="flex justify-between mt-2">
+                <p>Temperature<br><span class="text-xl">21.0°C</span></p>
+                <p>Rainfall<br><span class="text-xl">0.0 mm</span></p>
+            </div>
+        </div>
+
+        <div class="flex justify-between mt-2">
+            <p>Fertilizer</p>
+            <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="sr-only peer" id="fertilizer">
+                <div class="w-12 h-6 bg-gray-600 rounded-full peer-checked:bg-purple-500 transition"></div>
+                <div class="absolute w-5 h-5 bg-white rounded-full left-1 top-0.5 peer-checked:translate-x-6 transition"></div>
+            </label>
+        </div>
+        
+        <div class="flex justify-between mt-2">
+            <p>Irrigation</p>
+            <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="sr-only peer" id="irrigation">
+                <div class="w-12 h-6 bg-gray-600 rounded-full peer-checked:bg-purple-500 transition"></div>
+                <div class="absolute w-5 h-5 bg-white rounded-full left-1 top-0.5 peer-checked:translate-x-6 transition"></div>
+            </label>
+        </div>
+        
+
+        <button class="mt-4 w-full py-2 bg-purple-400 rounded-lg text-gray-900 font-semibold" id="predict-btn">Predict Yield</button>
+        
+        <div class="mt-4 p-4 bg-red-800 rounded-lg text-center">
+            <p>Predicted Yield</p>
+            <p class="text-2xl">0.33 kg</p>
+        </div>
+
+        <div class="mt-4 p-4 bg-gray-700 rounded-lg text-sm">
+            <p class="font-semibold">AI Expert Recommendations</p>
+            <p class="text-red-400">Error getting AI recommendations: You exceeded your current quota, please check your plan and billing details.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Historical Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body class="bg-gray-900 text-white flex justify-center items-center h-screen">
+    <div class="w-96 p-6 bg-gray-800 rounded-xl shadow-lg">
+        <h1 class="text-xl font-semibold text-center">Enter Historical Data for Prediction</h1>
+        <p class="text-center text-blue-400">La Trinidad, Benguet</p>
+
+        <!-- Input Fields for Historical Data -->
+        <div class="mt-4">
+            <label for="temperature" class="block">Temperature (°C) for the past season</label>
+            <input type="number" id="temperature" class="w-full p-2 bg-gray-700 text-white rounded-lg mt-2" placeholder="e.g., 20.5" />
+
+            <label for="rainfall" class="block mt-4">Rainfall (mm) for the past season</label>
+            <input type="number" id="rainfall" class="w-full p-2 bg-gray-700 text-white rounded-lg mt-2" placeholder="e.g., 120" />
+
+            <label for="fertilizer" class="block mt-4">Fertilizer (kg/ha)</label>
+            <input type="number" id="fertilizer" class="w-full p-2 bg-gray-700 text-white rounded-lg mt-2" placeholder="e.g., 50" />
+
+            <label for="irrigation" class="block mt-4">Irrigation (hours per week)</label>
+            <input type="number" id="irrigation" class="w-full p-2 bg-gray-700 text-white rounded-lg mt-2" placeholder="e.g., 5" />
+
+            <button class="mt-4 w-full py-2 bg-purple-400 rounded-lg text-gray-900 font-semibold" id="submit-btn">Submit Historical Data</button>
+        </div>
+    </div>
+</body>
+</html>
